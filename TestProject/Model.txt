@@ -1,0 +1,37 @@
+User:
+	Id
+	Name
+	UserName
+	Password
+	
+Testexam:
+	Id
+	Name
+	PassScore
+	TotalScore
+	Description
+	Questions (list)
+	Duration (minutes)
+	
+Question
+	Id
+	Title
+	Description
+	HasMany(si tiene muchas o no)
+	Order
+	Answers
+	
+Answer
+	Id
+	Description
+	Question
+	Order
+	Correct
+	
+TestDone
+	Id
+	User
+	Testexam
+	Gradle
+	DateStart
+	DateEnd

@@ -1,0 +1,5 @@
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam\bin\Debug\TestExam.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam\bin\Debug\TestExam.Model.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam\obj\Debug\TestExam.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam\obj\Debug\TestExam.Model.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam\obj\Debug\TestExam.Model.csprojResolveAssemblyReference.cache
