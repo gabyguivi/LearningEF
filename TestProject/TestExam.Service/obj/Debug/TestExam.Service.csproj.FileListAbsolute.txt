@@ -9,3 +9,14 @@ C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\Test
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam.Service\bin\Debug\EntityFramework.xml
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam.Service\obj\Debug\TestExam.Service.dll
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\TestProject\TestExam.Service\obj\Debug\TestExam.Service.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\TestExam.Service.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\TestExam.Service.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\TestExam.Data.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\TestExam.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\TestExam.Data.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\TestExam.Model.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\obj\Debug\TestExam.Service.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\obj\Debug\TestExam.Service.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Service\obj\Debug\TestExam.Service.pdb

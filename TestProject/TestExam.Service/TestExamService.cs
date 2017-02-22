@@ -20,7 +20,7 @@ namespace TestExam.Service
 
         public IEnumerable<TestExam.Model.TestExam> GetAll()
         {
-            return testExamRepository.GetAll.ToList();
+            return testExamRepository.GetAll;
         }
 
         public TestExam.Model.TestExam GetTestExam(int id)

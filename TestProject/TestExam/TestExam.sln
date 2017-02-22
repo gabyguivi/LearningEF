@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExam.Data", "..\TestExa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExam.Service", "..\TestExam.Service\TestExam.Service.csproj", "{A8D68AB7-97ED-46E8-B898-C92972D465C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExam.Web", "..\TestExam.Web\TestExam.Web.csproj", "{DF748F54-E302-472A-85CD-8702F8160ECA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A8D68AB7-97ED-46E8-B898-C92972D465C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D68AB7-97ED-46E8-B898-C92972D465C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8D68AB7-97ED-46E8-B898-C92972D465C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF748F54-E302-472A-85CD-8702F8160ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF748F54-E302-472A-85CD-8702F8160ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF748F54-E302-472A-85CD-8702F8160ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF748F54-E302-472A-85CD-8702F8160ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

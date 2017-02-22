@@ -1,0 +1,4 @@
+-aclarar que usas entity framework como el orm por default de .net
+-aclarar que usas directo las clases de tu modelo en el front por una cuestion de rapidez en el desarrollo
+-aclarar que no encriptaste las password con algun algoritmo de hash pero que sabes que se hace
+-acarar que trabajaste mas como back end que front end

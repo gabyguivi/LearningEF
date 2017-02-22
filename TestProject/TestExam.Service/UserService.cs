@@ -28,6 +28,10 @@ namespace TestExam.Service
             return userRepository.GetById(id);
         }
 
+        public User GetUser(string user, string pass)
+        {
+            return userRepository.GetAll.FirstOrDefault(u => u.UserName == user && u.Password == pass);
+        }
         public void Insert(User user)
         {
             userRepository.Insert(user);

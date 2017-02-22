@@ -1,0 +1,45 @@
+﻿@model TestExam.Model.TestExam
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Test</h2>
+        <p>
+            @Html.Label(Model.Description)
+        </p>
+    </div>
+    <div class="col-md-4">
+        <p style="color:orangered">
+            @ViewBag.Error
+        </p>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+        @using (Html.BeginForm("Start", "Home", FormMethod.Post))
+            {
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.Label("User Name", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        <input type="text" name="userName" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("Password", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        <input type="password" name="userPass" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-3">
+                        <button class="btn btn-success" id="btnStart" type="submit">
+                            Start
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
