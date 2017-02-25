@@ -93,3 +93,7 @@ C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestP
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\Ninject.xml
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\Ninject.Web.Common.xml
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\System.Web.Http.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\TestProject\TestExam.Web\bin\System.Web.Http.xml

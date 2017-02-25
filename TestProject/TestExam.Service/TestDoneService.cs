@@ -23,7 +23,7 @@ namespace TestExam.Service
             return testDoneRepository.GetAll.ToList();
         }
 
-        public TestDone GetTestExam(int id)
+        public TestDone GetTestDone(int id)
         {
             return testDoneRepository.GetById(id);
         }
