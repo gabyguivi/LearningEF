@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\Challenge.Service.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\Challenge.Service.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\Challenge.Data.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\Challenge.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\Challenge.Data.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\bin\Debug\Challenge.Model.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\obj\Debug\Challenge.Service.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\obj\Debug\Challenge.Service.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Service\obj\Debug\Challenge.Service.pdb

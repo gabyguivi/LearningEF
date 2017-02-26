@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\bin\Debug\Challenge.Data.dll.config
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\bin\Debug\Challenge.Data.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\bin\Debug\Challenge.Data.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\bin\Debug\Challenge.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\bin\Debug\Challenge.Model.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\obj\Debug\Challenge.Data.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\obj\Debug\Challenge.Data.Migrations.InitialCreate.resources
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\obj\Debug\Challenge.Data.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\obj\Debug\Challenge.Data.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Data\obj\Debug\Challenge.Data.pdb

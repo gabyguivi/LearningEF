@@ -1,0 +1,4 @@
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Model\bin\Debug\Challenge.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Model\bin\Debug\Challenge.Model.pdb
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Model\obj\Debug\Challenge.Model.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.Model\obj\Debug\Challenge.Model.pdb
