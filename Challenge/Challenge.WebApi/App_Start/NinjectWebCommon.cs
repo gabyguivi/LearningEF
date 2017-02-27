@@ -70,11 +70,9 @@ namespace Challenge.WebApi.App_Start
         {
             kernel.Bind<IContext>().To<DBContext>().InRequestScope();
             kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InRequestScope();
-            kernel.Bind<IService<TestExam>>().To<TestExamService>();
-            kernel.Bind<IService<User>>().To<UserService>();
-            kernel.Bind<IService<Answer>>().To<AnswerService>();
-            kernel.Bind<IService<Question>>().To<QuestionService>();
-            kernel.Bind<IService<TestDone>>().To<TestDoneService>();
+            kernel.Bind<IService<Application>>().To<ApplicationService>();
+            kernel.Bind<IService<Log>>().To<LogService>();
+            kernel.Bind<IService<SessionTime>>().To<SessionTimeService>();          
         }
     }
 }

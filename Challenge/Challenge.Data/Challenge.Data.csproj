@@ -52,27 +52,15 @@
   <ItemGroup>
     <Compile Include="DBContext.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Mapping\TestDoneMap.cs" />
-    <Compile Include="Mapping\AnswerMap.cs" />
-    <Compile Include="Mapping\QuestionMap.cs" />
-    <Compile Include="Mapping\TestExamMap.cs" />
-    <Compile Include="Mapping\UserMap.cs" />
-    <Compile Include="Migrations\201702212354251_InitialCreate.cs" />
-    <Compile Include="Migrations\201702212354251_InitialCreate.Designer.cs">
-      <DependentUpon>201702212354251_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Mapping\LogMap.cs" />
+    <Compile Include="Mapping\SessionMap.cs" />
+    <Compile Include="Mapping\ApplicationMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702212354251_InitialCreate.resx">
-      <DependentUpon>201702212354251_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Challenge.Model\Challenge.Model.csproj">

@@ -43,13 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Answer.cs" />
-    <Compile Include="EntityInt.cs" />
-    <Compile Include="Interfaces\IEntityInt.cs" />
-    <Compile Include="Question.cs" />
-    <Compile Include="TestDone.cs" />
-    <Compile Include="TestExam.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="SessionTime.cs" />
+    <Compile Include="Application.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

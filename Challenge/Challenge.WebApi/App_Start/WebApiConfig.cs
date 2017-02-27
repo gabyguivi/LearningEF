@@ -31,7 +31,7 @@ namespace Challenge.WebApi
                 name: "DefaultApiGetMethod",
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
-            );
+            );            
         }
     }
 }

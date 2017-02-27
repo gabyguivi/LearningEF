@@ -8,14 +8,14 @@ using Challenge.Model;
 
 namespace Challenge.Data.Mapping
 {
-    public class UserMap : EntityTypeConfiguration<User>
+    public class SessionTimeMap : EntityTypeConfiguration<SessionTime>
     {
-        public UserMap()
+        public SessionTimeMap()
         {
             //key
-            HasKey(t => t.Id);            
+            HasKey(t => t.minutes);
             //table
-            ToTable("Users");
+            ToTable("session_time");
         }
     }
 }

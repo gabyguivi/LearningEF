@@ -41,13 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestDoneService.cs" />
-    <Compile Include="TestExamService.cs" />
+    <Compile Include="SessionTimeService.cs" />
+    <Compile Include="LogService.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AnswerService.cs" />
-    <Compile Include="QuestionService.cs" />
-    <Compile Include="UserService.cs" />
+    <Compile Include="ApplicationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Challenge.Data\Challenge.Data.csproj">

@@ -8,8 +8,7 @@ using Challenge.Model.Interfaces;
 
 namespace Challenge.Model
 {
-    public abstract class EntityInt : IEntityInt
+    public abstract class Entity : IEntity
     {
-        public virtual int Id { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using Challenge.Model;
 namespace Challenge.Data
 {
 
-    public class Repository<T> : IRepository<T> where T : EntityInt
+    public class Repository<T> : IRepository<T> where T : Entity
     {
         private readonly IContext _context;
         private IDbSet<T> _entities;

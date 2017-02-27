@@ -7,7 +7,7 @@ using Challenge.Model;
 
 namespace Challenge.Data.Interfaces
 {
-    public interface IRepository<T> where T : EntityInt
+    public interface IRepository<T> where T : Entity
     {
         T GetById(object id);
         void Insert(T entity);

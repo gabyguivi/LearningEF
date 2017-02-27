@@ -17,12 +17,7 @@ namespace Challenge.WebApi
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
-            routes.MapRoute(
-                name: "IsEnded",
-                url: "Test/IsEnded/{id}",
-                defaults: new { controller = "Test", action = "IsEnded", id = UrlParameter.Optional }
-            );
+            );          
         }
     }
 }

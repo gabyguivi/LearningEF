@@ -4,7 +4,7 @@ using Challenge.Model;
 namespace Challenge.Service.Interfaces
 {
 
-    public interface IService<T> where T : EntityInt
+    public interface IService<T> where T : Entity
     {
         void Insert(T entity);
         void Delete(T entity);

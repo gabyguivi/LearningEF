@@ -14,12 +14,12 @@ namespace Challenge.Data
 {
     public interface IContext
     {
-        IDbSet<TEntity> Set<TEntity>() where TEntity : EntityInt;
+        IDbSet<TEntity> Set<TEntity>() where TEntity : Entity;
         int SaveChanges();
     }
     public class DBContext: DbContext, IContext
     {
-        public DBContext() : base("TestsExamDB")
+        public DBContext() : base("Crossover")
         {           
         }
 
@@ -35,12 +35,10 @@ namespace Challenge.Data
                 dynamic configurationInstance = Activator.CreateInstance(type);
                 modelBuilder.Configurations.Add(configurationInstance);
             }
-            base.OnModelCreating(modelBuilder);
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<DBContext, Migrations.Configuration>(true));
-
+            base.OnModelCreating(modelBuilder);            
         }
 
-        public new IDbSet<TEntity> Set<TEntity>() where TEntity : EntityInt
+        public new IDbSet<TEntity> Set<TEntity>() where TEntity : Entity
         {
             return base.Set<TEntity>();
         }

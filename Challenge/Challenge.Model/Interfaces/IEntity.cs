@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge.Model.Interfaces
 {
-    public interface IEntityInt
+    public interface IEntity
     {
-        int Id { get; set; }
     }
 }
