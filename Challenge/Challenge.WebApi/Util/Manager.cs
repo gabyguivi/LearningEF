@@ -15,18 +15,30 @@ namespace Challenge.WebApi.Util
             SessionToken s = new SessionToken();
             s.amountRequestMinute = 1;
             s.startDateBlock = null;
-            s.startDateOfPeriod = null;
+            s.startDateOfPeriod = DateTime.Now;
             CacheApps.Add(app_id, s, new DateTimeOffset(DateTime.Now.AddMinutes(sessiontime)));
         }
         /// <summary>
         /// returns if an app is in the cache or not
         /// </summary>
-        /// <param name="app_id"></param>
+        /// <param name="key"></param>
         /// <returns></returns>
-        public static bool ExistsApp(string app_id)
+        public static bool ExistsApp(string key)
         {
-            return CacheApps.GetCacheItem(app_id) != null;
+            return CacheApps.GetCacheItem(key) != null;
         }
+
+        /// <summary>
+        /// returns if an app is in the cache or not with token and key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public static bool ExistsApp(string key, string token)
+        {
+            SessionToken sToken = (SessionToken)CacheApps.GetCacheItem(key).Value;
+            return (sToken != null && sToken.token == token);
+        }
+
         /// <summary>
         /// Generates and returns the token for the app sended as parameter
         /// </summary>
@@ -55,8 +67,14 @@ namespace Challenge.WebApi.Util
         {
             SessionToken sToken = GetByApp(app_id);
             sToken.AddAmount();
+            if (sToken.isRateLimit)
+            {
+                sToken.amountRequestMinute = 1;
+                sToken.startDateBlock = DateTime.Now;
+            }
             CacheApps.Remove(app_id);
             CacheApps.Add(app_id, sToken, new DateTimeOffset(DateTime.Now.AddMinutes(sessiontime)));//renew the session time            
+
         }
 
         public static SessionToken GetByToken(string token)
@@ -70,13 +88,13 @@ namespace Challenge.WebApi.Util
             return ((SessionToken)CacheApps.GetCacheItem(app_id).Value);
         }
 
-        public static void RegisterBlockTime(string app_id)
+        public static void RenewBlockTime(string app_id)
         {
             SessionToken sToken = GetByApp(app_id);
-            sToken.startDateBlock = DateTime.Now;
             sToken.amountRequestMinute = 1;
+            sToken.startDateBlock = DateTime.Now;
             CacheApps.Remove(app_id);
             CacheApps.Add(app_id, sToken, new DateTimeOffset(DateTime.Now.AddMinutes(sessiontime)));//renew the session time            
-        }        
+        }
     }
 }

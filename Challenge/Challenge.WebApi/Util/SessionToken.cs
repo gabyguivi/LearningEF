@@ -34,7 +34,7 @@ namespace Challenge.WebApi.Util
         {
             get
             {
-                return (amountRequestMinute >= 60);                
+                return (amountRequestMinute >= int.Parse(ConfigurationManager.AppSettings["AmountMessages"]));                
             }
         }
         public void AddAmount()

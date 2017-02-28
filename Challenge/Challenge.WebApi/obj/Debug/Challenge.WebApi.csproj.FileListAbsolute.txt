@@ -100,3 +100,5 @@ C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Chall
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\System.Web.Http.Owin.xml
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\Ninject.Web.WebApi.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\Ninject.Web.WebApi.xml

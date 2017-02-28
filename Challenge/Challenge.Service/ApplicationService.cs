@@ -22,12 +22,16 @@ namespace Challenge.Service
         }
 
         public Application GetApplication(string id)
-        {
-            
+        {            
             //I not use find method because it was returning null and a didn't have the time to solve this
             return applicationRepository.GetAll.FirstOrDefault(a=>a.application_id==id);
         }
 
+        public Application GetApplicationByDisplayName(string name)
+        {
+            //I not use find method because it was returning null and a didn't have the time to solve this
+            return applicationRepository.GetAll.FirstOrDefault(a => a.display_name== name);
+        }
         public void Insert(Application application)
         {
             applicationRepository.Insert(application);

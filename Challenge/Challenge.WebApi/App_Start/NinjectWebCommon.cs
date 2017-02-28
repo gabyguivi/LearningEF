@@ -15,6 +15,10 @@ namespace Challenge.WebApi.App_Start
     using Challenge.Data.Interfaces;
     using Challenge.Service.Interfaces;
     using System.Web.Http;
+    using Ninject.Web.Mvc.FilterBindingSyntax;
+    using Util;
+    using Ninject.Web.WebApi.FilterBindingSyntax;
+    using System.Web.Http.Filters;
 
     public static class NinjectWebCommon
     {
@@ -68,11 +72,14 @@ namespace Challenge.WebApi.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.BindHttpFilter<AppServiceFilter>(FilterScope.Action)
+              .WhenActionMethodHas<AppFilterAttribute>().InRequestScope();
             kernel.Bind<IContext>().To<DBContext>().InRequestScope();
             kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InRequestScope();
-            kernel.Bind<IService<Application>>().To<ApplicationService>();
-            kernel.Bind<IService<Log>>().To<LogService>();
-            kernel.Bind<IService<SessionTime>>().To<SessionTimeService>();          
+            kernel.Bind<IService<Application>>().To<ApplicationService>().InRequestScope();
+            kernel.Bind<IService<Log>>().To<LogService>().InRequestScope();
+            kernel.Bind<IService<SessionTime>>().To<SessionTimeService>().InRequestScope();
+          
         }
     }
 }

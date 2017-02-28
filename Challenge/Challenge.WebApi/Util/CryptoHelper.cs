@@ -11,7 +11,6 @@ namespace Challenge.WebApi.Util
     public class CryptoHelper
     {
         private static byte[] tdesKey = UTF8Encoding.UTF8.GetBytes("012345678901234567890123"), tdesIV = UTF8Encoding.UTF8.GetBytes("01234567");
-        private static string salt = "crossover"; // this is a string just for using the salt in SHA algorith
         /// <summary>
         /// Encrypts a string with the TripleDES algorithm
         /// </summary>
