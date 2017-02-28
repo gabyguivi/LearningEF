@@ -26,7 +26,7 @@ namespace Challenge.WebApi.Util
                 else
                 {
                     string authInfo = actionContext.Request.Headers.Authorization.Parameter;
-                    string decodedInfo = Encoding.UTF8.GetString(Convert.FromBase64String(authInfo));
+                    string decodedInfo = authInfo;
                     string app_id = decodedInfo.Split(':')[0];
                     string app_secret = decodedInfo.Split(':')[1];
                     if (string.IsNullOrEmpty(app_id) || string.IsNullOrEmpty(app_secret))
@@ -55,10 +55,9 @@ namespace Challenge.WebApi.Util
                 actionContext.Response = new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.Unauthorized);
             }
             else
-            {
-                string authInfo = actionContext.Request.Headers.Authorization.Parameter;
-                string token = Encoding.UTF8.GetString(Convert.FromBase64String(authInfo));
-                //token = token.Replace(":", ""); used when postman is the client
+            {                
+                string token = actionContext.Request.Headers.Authorization.Parameter;
+                token = token.Replace(":", ""); 
                 string decodedInfo = CryptoHelper.DecryptText(token.Replace(":","")).Split('=')[0];
                 string app_id = decodedInfo;
                 if (!Manager.ExistsApp(app_id,token))

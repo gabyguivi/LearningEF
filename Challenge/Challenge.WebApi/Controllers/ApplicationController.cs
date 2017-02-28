@@ -10,9 +10,11 @@ using Challenge.Service.Interfaces;
 using Challenge.WebApi.Util;
 using Newtonsoft.Json.Linq;
 using System.Text;
+using System.Web.Http.Cors;
 
 namespace Challenge.WebApi.Controllers
 {
+    [EnableCors(origins: "http://localhost:9448", headers: "*", methods: "*")]
     public class ApplicationController : ApiController
     {
         private IService<Application> service;
@@ -43,6 +45,7 @@ namespace Challenge.WebApi.Controllers
         public JObject register(JObject displayname)
         {
             JToken display;
+            JObject result;
             displayname.TryGetValue("display_name", out display);
             if (display == null || string.IsNullOrEmpty(display.ToString()) || display.ToString().Length > 25)
             {
@@ -67,10 +70,14 @@ namespace Challenge.WebApi.Controllers
                     {
                         Manager.AddAmount(app.application_id);
                     }
-                    return JObject.Parse("{'Error':'the application already exists'}");
+                    result = new JObject();
+                    result.Add("Error", JToken.FromObject("the application already exists"));
+                    return result;
                 }
                 Manager.RegisterApp(app.application_id);//register in Memory cache the app
-                return JObject.Parse("{'Error':'the application already exists'}");
+                result = new JObject();
+                result.Add("Error", JToken.FromObject("the application already exists"));
+                return result;
             }
             app = new Application()
             {
@@ -80,11 +87,11 @@ namespace Challenge.WebApi.Controllers
             };                        
             Service.Insert(app);
             Manager.RegisterApp(app.application_id);//register in Memory cache the app
-            JObject result = JObject.FromObject(app);
+            result = JObject.FromObject(app);
             result.Remove("secret");
             result.Remove("application_id");
-            result.Add("application_secret", JToken.FromObject(app_id));
-            result.Add("application_id", JToken.FromObject(secret));
+            result.Add("application_secret", JToken.FromObject(secret));
+            result.Add("application_id", JToken.FromObject(app_id));
             return result;
         }
 
@@ -92,9 +99,8 @@ namespace Challenge.WebApi.Controllers
         [HttpPost]
         [AppFilter]
         public JObject auth()
-        {
-            string authInfo = Request.Headers.Authorization.Parameter;
-            string decodedInfo = Encoding.UTF8.GetString(Convert.FromBase64String(authInfo));
+        {           
+            string decodedInfo = Request.Headers.Authorization.Parameter;
             string app_id = decodedInfo.Split(':')[0];
             string secret = decodedInfo.Split(':')[1];
             //Check if app exists
@@ -119,10 +125,8 @@ namespace Challenge.WebApi.Controllers
         [TokenAuth]
         public JObject log(JObject message)
         {
-            string authInfo = Request.Headers.Authorization.Parameter;
-            string decodedInfo = Encoding.UTF8.GetString(Convert.FromBase64String(authInfo));
-            //Get app_id from token         
-            //decodedInfo = decodedInfo.Replace(":", ""); using when postman is the client
+            string decodedInfo = Request.Headers.Authorization.Parameter;
+            //Get app_id from token                    
             string app_id = CryptoHelper.DecryptText(decodedInfo).Split('=')[0].Split(':')[0];                       
             
             Application app = Service.GetApplication(CryptoHelper.EncryptText(app_id));

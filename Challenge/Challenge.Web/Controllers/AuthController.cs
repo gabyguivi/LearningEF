@@ -9,16 +9,17 @@ using Challenge.Service.Interfaces;
 
 namespace Challenge.Web.Controllers
 {
-    public class HomeController : Controller
+    public class AuthController : Controller
     {
-      
-        public HomeController()
+        
+        public AuthController()
         {            
         }
 
         public ActionResult Index()
         {
-            return View();
-        }     
+            return View();         
+        }
+
     }
 }

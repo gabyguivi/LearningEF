@@ -1,0 +1,77 @@
+﻿<div class="row">
+    <div class="col-md-4">
+        <h2>Challenge</h2>
+        <p>
+           Log application messages
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <p style="color:orangered">
+            @ViewBag.Error
+        </p>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.Label("Logger", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        <input type="text" required id="logger" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("Level", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        <input type="text" required id="level" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("Message", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-9">
+                        <input type="text" required id="message" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-3">
+                        <button class="btn btn-success" id="btnAuth" onclick="Log();">
+                            Log
+                        </button>
+                    </div>
+                </div>
+            </div>        
+    </div>
+</div>
+
+<script type="text/javascript">
+    function Log() {
+        var json = {
+           application_id : "@ViewBag.App",
+            logger: $('#logger').val(),
+            level: $('#level').val(),
+            message: $('#message').val()
+        };
+        $.ajax({
+            url: 'http://localhost:8080/api/application/log',
+            type: 'POST',
+            contentType: 'application/json',
+            dataType: 'json',
+            data :JSON.stringify(json),
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("Authorization","Basic " + "@ViewBag.Token");
+            },
+            success: function (data) {
+                alert('Success login message');
+            },
+            error: function (data) {
+                alert('Sorry for not managing error. Please log in again');
+                var url = '@Url.Action("Index", "Auth")';
+                window.location.href = url;
+            }
+        });
+    }
+  </script>

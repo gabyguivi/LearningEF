@@ -102,3 +102,6 @@ C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Chall
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\System.Web.Http.Owin.xml
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\Ninject.Web.WebApi.dll
 C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\Ninject.Web.WebApi.xml
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\System.Web.Cors.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\User\Documents\Mis Documentos\Laburo\RemoteApplication\LearningEF\Challenge\Challenge.WebApi\bin\System.Web.Http.Cors.xml

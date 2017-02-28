@@ -9,16 +9,19 @@ using Challenge.Service.Interfaces;
 
 namespace Challenge.Web.Controllers
 {
-    public class HomeController : Controller
+    public class LogController : Controller
     {
-      
-        public HomeController()
+        
+        public LogController()
         {            
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string token, string app)
         {
-            return View();
-        }     
+            ViewBag.Token = token;
+            ViewBag.App = app;
+            return View();         
+        }
+
     }
 }
